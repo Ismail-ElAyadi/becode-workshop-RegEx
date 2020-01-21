@@ -81,7 +81,7 @@ Si la première ou la seconde valeur n'est pas spécifiée, elle vaudra 0 par d�
 ```python
 import re
 
-pattern = r"9{1,3}"
+pattern = r"9{1,3}$"
 
 if re.match(pattern, "9"):
   print("Match 1")
