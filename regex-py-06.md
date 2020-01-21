@@ -70,12 +70,12 @@ if match:
   print("Match 1")
 
 match = re.search(pattern, "We s>cat<tered?")
-  if match:
-    print("Match 2")
+if match:
+  print("Match 2")
 
 match = re.search(pattern, "We scattered.")
-    if match:
-      print("Match 3")
+if match:
+  print("Match 3")
 ```
 <br>
 
@@ -85,7 +85,7 @@ Le dernier exemple illustre très bien la différence entre **\b** et **\B**.
 
 <br>
 
-**EXEMPLE 3** : *séquence spéciale Space Jam*
+**EXEMPLE 4** : *séquence spéciale Space Jam*
 
 ```python
 import re
@@ -97,8 +97,8 @@ if match:
   print("Match 1")
 
 match = re.match(pattern, "hauteur - largeur")
-  if match:
-    print("Match 2")
+if match:
+  print("Match 2")
 
 pattern = r".+\B-\B.+"
 
@@ -107,8 +107,8 @@ if match:
   print("Match 3")
 
 match = re.match(pattern, "hauteur - largeur")
-  if match:
-    print("Match 4")
+if match:
+  print("Match 4")
 ```
 <br>
 
